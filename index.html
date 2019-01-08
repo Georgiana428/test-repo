@@ -1,15 +1,88 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 
 <html>
 
+<head>
+
+<meta charset="UTF-8">
+
+<title>Joc-Ghiceste numarul</title>
+
+</head>
+<body bgcolor="#FF69B4">
+
+
 <body>
 
+<p>La ce numar ma gandesc?</p>
+   <button>1</button>
+  
+   <button>2</button>
+    
+   <button>3</button>
+    
+   <button>4</button>
+    
+   <button>5</button>
+   
+ <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+ 
+    crossorigin="anonymous"></script>
+   
+    <script>
+    
+$( document ).ready(function() {
+     
+ window.number=Math.floor(Math.random()*5)+1;
 
-<h1>My First Heading</h1>
 
-<p>My first paragraph.</p>
+  
+ 
+  $("button").on("click", function() {
+if($(this).text()==number) {
+alert("Ai ghicit :)))) :P !");
+} else {
+alert("N-ai ghicit! :(");
+ $(this).fadeOut(500);
+
+}
+
+});
+});
+
+
+
+   
+</script>
 
 
 </body>
+
+<style>
+   
+ button{
+background-color:red;
+color:white;
+
+  
+       
+ width:100px;
+       
+ height:100px;
+       
+ font-size:50px;
+
+  } 
+button:hover{
+background-color:black;
+}
+
+
+</style>
+
+
 
 </html>
